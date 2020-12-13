@@ -2,8 +2,9 @@
   "name": "nextwind",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "export": "next export",
     "lint": "eslint --ext .ts,.tsx",
     "lint:fix": "eslint --ext .ts,.tsx --fix",
     "start": "next start"

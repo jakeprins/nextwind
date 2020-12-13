@@ -2,7 +2,7 @@ export default {
   cms_manual_init: true,
   backend: {
     name: 'github',
-    repo: '<your-username>/<your-branch-name>',
+    repo: 'jakeprins/nextwind',
     branch: 'master',
   },
   media_folder: 'public/img',

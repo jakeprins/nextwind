@@ -1,10 +1,10 @@
-# NextWind - A Next.js + Tailwind + Netlify CMS starter-kit
+# NextWind - A Tailwind + Netlify CMS starter-kit built with Next.js
 
 A flexible landing page + blog template
 
 Run `npm install && npm run dev` to start the project.
 
-Follow the steps below to setup the CMS.
+Navigate to `/admin` to login the CMS. Make sure you have followed the steps below to configure it correctly.
 
 ## Netlify CMS
 
@@ -36,6 +36,12 @@ backend: {
 Note: When you deploy your app NOT to Netlify, you need to run your own authentication server to use GitHub authentication for NetlifyCMS. This is already implemented for your with some Cloud Functions (see `/functions/oauth/`), but you still need to follow the steps described [here](#Deploy-on-Vercel) before you deploy to production.
 
 Note: It's recommended to connect your git repo with Vercel (or Netlify) for automatic deployments on each push to the project. When you hit the "publish" button inside the CMS, a commit will be made to your repo that includes the changes you made to the page. With automatic deployments activated this means a deployment will be triggered after you publish any changes. After this deployment, your changes will be live.
+
+---
+
+## Tailblocks
+
+Section components are built with [Tailblocks](https://mertjf.github.io/tailblocks/).
 
 ---
 

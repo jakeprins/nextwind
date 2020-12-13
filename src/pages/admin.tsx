@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import config from 'cms/config';
 import HomePreview from 'cms/previews/HomePreview';
 import PostPreview from 'cms/previews/PostPreview';
+import Spinner from 'components/icons/Spinner';
 
 const CMS = dynamic(
   (): any =>
@@ -17,7 +18,11 @@ const CMS = dynamic(
       cms.registerPreviewTemplate('home', HomePreview);
       cms.registerPreviewTemplate('posts', PostPreview);
     }),
-  { ssr: false, loading: () => <p>Loading...</p> }
+  {
+    ssr: false,
+    // eslint-disable-next-line react/display-name
+    loading: () => <Spinner width="20" fill="white" className="animate-spin" />,
+  }
 );
 
 const AdminPage: React.FC = () => {
