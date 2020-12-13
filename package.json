@@ -1,11 +1,9 @@
 {
-  "name": "serverless-saas",
-  "version": "1.1.0",
-  "private": true,
+  "name": "nextwind",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy:functions": "cd ./functions && npm run deploy",
     "lint": "eslint --ext .ts,.tsx",
     "lint:fix": "eslint --ext .ts,.tsx --fix",
     "start": "next start"
@@ -19,17 +17,12 @@
     "@stripe/stripe-js": "1.9.0",
     "@tailwindcss/typography": "0.2.0",
     "autoprefixer": "10.0.2",
-    "firebase": "7.22.1",
-    "firebase-admin": "9.2.0",
-    "firebase-functions": "3.11.0",
     "netlify-cms-app": "2.12.25",
     "next": "10.0.0",
     "postcss": "8.1.8",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-dropzone": "11.2.0",
     "react-hook-form": "6.9.2",
-    "react-transition-group": "4.4.1",
     "tailwindcss": "2.0.1"
   },
   "devDependencies": {

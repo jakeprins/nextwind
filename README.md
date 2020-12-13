@@ -1,8 +1,10 @@
-# Tailify - A Next.js + Tailwind + Netlify CMS starter-kit
+# NextWind - A Next.js + Tailwind + Netlify CMS starter-kit
 
-This project is started with the [Serverless SaaS Boilerplate](https://serverless.page/), a React starter-kit that is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A flexible landing page + blog template
 
-Run `npm install && npm run dev` to start the project. To use the CMS follow the steps below.
+Run `npm install && npm run dev` to start the project.
+
+Follow the steps below to setup the CMS.
 
 ## Netlify CMS
 

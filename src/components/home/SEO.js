@@ -2,32 +2,32 @@ import Head from 'next/head';
 
 const SEO = () => (
   <Head>
-    <title>Serverless SaaS</title>
+    <title>NextWind</title>
     <meta
       name="description"
-      content="Serverless SaaS is aiming to be the perfect starting point for your next React app to build full-stack applications. Save time and skip implementing authentication, payments, teams, etc."
+      content="A flexible landing page + blog template"
     ></meta>
     <meta
-      content="https://serverlesssaas.com/img/serverless-saas.png"
+      content="https://serverless.page/img/serverless-saas.png"
       property="og:image"
     ></meta>
-    <meta content="https://serverlesssaas.com" property="og:url"></meta>
+    <meta content="https://serverless.page" property="og:url"></meta>
     <meta content="website" property="og:type"></meta>
-    <meta content="Serverless SaaS Boilerplate" property="og:title"></meta>
+    <meta content="NextWind" property="og:title"></meta>
     <meta
-      content="Serverless SaaS is aiming to be the perfect starting point for your next React app to build full-stack applications. Save time and skip implementing authentication, payments, teams, etc."
+      content="A flexible landing page + blog template"
       property="og:description"
     ></meta>
 
     {/* Twitter */}
-    <meta name="twitter:title" content="Serverless SaaS Boilerplate"></meta>
+    <meta name="twitter:title" content="NextWind"></meta>
     <meta
       name="twitter:description"
-      content="Serverless SaaS is aiming to be the perfect starting point for your next React app to build full-stack applications. Save time and skip implementing authentication, payments, teams, etc."
+      content="A flexible landing page + blog template"
     ></meta>
     <meta
       name="twitter:image"
-      content="https://serverlesssaas.com/img/serverless-saas.png"
+      content="https://serverless.page/img/serverless-saas.png"
     ></meta>
     <meta name="twitter:card" content="summary_large_image"></meta>
     <meta name="twitter:image:alt" content="Serverless SaaS"></meta>
