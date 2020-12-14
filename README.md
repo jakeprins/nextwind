@@ -1,8 +1,4 @@
-# NextWind - A Tailwind + Netlify CMS starter-kit built with Next.js
-
-A flexible landing page + blog template
-
-Run `npm install && npm run dev` to start the project and navigate to `/admin` to login the CMS. Make sure you have followed the steps below to configure it correctly.
+# NextWind - A flexible landing page & blog template
 
 Made with [Next.js](https://nextjs.org/docs), [TypeScript](https://www.typescriptlang.org/), [Netlify CMS](https://www.netlifycms.org/), [Tailwind CSS](https://tailwindcss.com/) and [Tailblocks](https://mertjf.github.io/tailblocks/).
 
@@ -20,7 +16,7 @@ Netlify CMS is an open-source git-based content management library. Content is s
 - Open `cms/config.js` in this project and update `backend.repo` with your new repository name.
 - Push the code of this project to this new repo.
 
-You can now start the project with `yarn dev` or `npm run dev` and navigate to `http://localhost:3000/admin`. You can now login with Github and manage the content of the landing page of blog posts with a nice UI. When you make a change you can hit the "Publish" button, this will result in making a commit to your repository with the changes made to the corresponding markdown file.
+You can now start the project with `yarn dev` or `npm run dev` and navigate to `/admin`. You can now login with Github and manage the content of the landing page of blog posts with a nice UI. When you make a change you can hit the "Publish" button, this will result in making a commit to your repository with the changes made to the corresponding markdown file.
 
 Before deploying your application you need to enable basic GitHub authentication. Follow the authentication provider setup steps in the [Netlify docs](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#setup-and-settings).
 
