@@ -2,11 +2,17 @@
 
 A flexible landing page + blog template
 
-Run `npm install && npm run dev` to start the project.
+Run `npm install && npm run dev` to start the project and navigate to `/admin` to login the CMS. Make sure you have followed the steps below to configure it correctly.
 
-Navigate to `/admin` to login the CMS. Make sure you have followed the steps below to configure it correctly.
+Made with [Next.js](https://nextjs.org/docs), [TypeScript](https://www.typescriptlang.org/), [Netlify CMS](https://www.netlifycms.org/), [Tailwind CSS](https://tailwindcss.com/) and [Tailblocks](https://mertjf.github.io/tailblocks/).
 
-## Netlify CMS
+<div align="center">
+    <img src="./public/img/screenshot.png" width="800px"</img>
+</div>
+
+## Getting Started
+
+#### Netlify CMS
 
 Netlify CMS is an open-source git-based content management library. Content is stored in your Git repository alongside your code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git. It's like a UI for editing your markdown files that we use to show the landing page and the blog posts.
 
@@ -16,7 +22,7 @@ Netlify CMS is an open-source git-based content management library. Content is s
 
 You can now start the project with `yarn dev` or `npm run dev` and navigate to `http://localhost:3000/admin`. You can now login with Github and manage the content of the landing page of blog posts with a nice UI. When you make a change you can hit the "Publish" button, this will result in making a commit to your repository with the changes made to the corresponding markdown file.
 
-Note: Before you deploy your application, don't forget to update the `SEO` component with your meta tags.
+Before deploying your application you need to enable basic GitHub authentication. Follow the authentication provider setup steps in the [Netlify docs](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#setup-and-settings).
 
 #### Test
 
@@ -33,15 +39,13 @@ backend: {
 },
 ```
 
-Note: When you deploy your app NOT to Netlify, you need to run your own authentication server to use GitHub authentication for NetlifyCMS. This is already implemented for your with some Cloud Functions (see `/functions/oauth/`), but you still need to follow the steps described [here](#Deploy-on-Vercel) before you deploy to production.
+Note: It's recommended to connect your git repo with Vercel or Netlify for automatic deployments. When you hit the "publish" button inside the CMS, a commit will be made to your repo that includes the changes you made to the page. With automatic deployments activated this means a deployment will be triggered after you publish any changes. After this deployment, your changes will be live.
 
-Note: It's recommended to connect your git repo with Vercel (or Netlify) for automatic deployments on each push to the project. When you hit the "publish" button inside the CMS, a commit will be made to your repo that includes the changes you made to the page. With automatic deployments activated this means a deployment will be triggered after you publish any changes. After this deployment, your changes will be live.
+#### Deploy
 
----
+Because Github requires a server for authentication, Netlify facilitates basic GitHub authentication.
 
-## Tailblocks
-
-Section components are built with [Tailblocks](https://mertjf.github.io/tailblocks/).
+To enable basic GitHub authentication follow the authentication provider setup steps in the [Netlify docs](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#setup-and-settings).
 
 ---
 
